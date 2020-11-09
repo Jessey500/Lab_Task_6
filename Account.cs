@@ -29,6 +29,7 @@ namespace Lab_Task_6
             get { return balance; }
             set { balance = value; }
         }
+
         public Account() { }
 
         public Account(string accName, string accNo, int balance)
@@ -46,27 +47,28 @@ namespace Lab_Task_6
         { if(amount<balance)
         { balance-=amount;}
         else
-            Console.WriteLine("Insufficient balance")
+            Console.WriteLine("Insufficient balance");
         }
         public void Transfer(int amount)
         {
             if (balance>amount)
             { balance -= amount;}
-                Console.WriteLine("Balance after transfer")
+                Console.WriteLine("Balance after transfer");
             else 
-                Console.WriteLine("Amount extends balance ")
+                Console.WriteLine("Amount extends balance ");
         }
-            {
-                public void Receive(int amount)
-                { balance+=amount;
-                }
+         {
+             public void Receive(int amount)
+              { balance+=amount;
+              }
+         }
         public void ShowInfo()
         {
-           Console.WriteLine("AccName: "+ accName)
-           Console.WriteLine("AccNo: "+ accNo)
-           Console.WriteLine("Balance: "+ balance)
+           Console.WriteLine("AccName: "+ accName);
+           Console.WriteLine("AccNo: "+ accNo);
+           Console.WriteLine("Balance: "+ balance);
            
         }
-   
+    }
    
 }
